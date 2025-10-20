@@ -457,7 +457,7 @@ export default function BookmarkApp() {
             <span className="inline px-3 animate-gradient-move">Bookmark Cloud</span>
             <span className="bg-gradient-to-r from-amber-400 via-pink-300 to-cyan-400 bg-clip-text text-transparent ml-2 font-extrabold">SaaS</span>
           </h1>
-          <p className="max-w-[600px] mx-auto text-lg sm:text-2xl text-slate-800/50 dark:text-gray-400/90 font-bold leading-relaxed mb-6 mt-3 opacity-100 transition-colors duration-500">
+          <p className="max-w-[600px] mx-auto text-lg sm:text-2xl text-slate-800/90 dark:text-gray-400/85 font-bold leading-relaxed mb-6 mt-3 opacity-100 transition-colors duration-500">
             Discover, save, and share the web's premium resources in real-time.<br />
             <span className="text-cyan-500 dark:text-cyan-400 font-extrabold">Community curated. Blazing fast. Elegant as a dream.</span>
           </p>
