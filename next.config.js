@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Simple config to force a new build
-    swcMinify: true
+    // Disable turbopack for production
+    experimental: {
+      turbo: undefined
+    }
   }
   
   module.exports = nextConfig
