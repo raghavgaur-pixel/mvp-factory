@@ -3,6 +3,8 @@
 
 import type { Metadata } from 'next'
 import './globals.css'
+import 'aos/dist/aos.css'
+import { ClientThemeProvider } from './components/ClientThemeProvider'
 
 export const metadata: Metadata = {
   title: 'Bookmark SaaS - Save & Share Links',
@@ -15,8 +17,25 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('theme') || 
+                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.classList.toggle('dark', theme === 'dark');
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
+      <body>
+        <ClientThemeProvider>
+          {children}
+        </ClientThemeProvider>
+      </body>
     </html>
   )
 }
