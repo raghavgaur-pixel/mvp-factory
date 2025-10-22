@@ -859,7 +859,7 @@ export default function ServicesPage() {
               </ul>
               <a 
                 ref={magBtn}
-                href="http://localhost:3000"
+                href="https://mvp-factory-ten.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-block px-8 py-3 rounded-full bg-gradient-to-br from-blue-600 to-pink-600 text-white font-bold shadow-xl transition-all duration-200 border-2 border-white/50 hover:scale-105 hover:shadow-2xl hover:from-pink-800 hover:to-blue-500 focus-visible:ring-4 focus-visible:ring-blue-200 micro-interact"
